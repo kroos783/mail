@@ -36,7 +36,6 @@ function load_mailbox(mailbox) {
   fetch('/emails/' + mailbox)
     .then(response => response.json())
     .then(emails => {
-      console.log(emails);
       let emails_view = document.querySelector("#emails-view");
 
       // For each email in emails => create div
@@ -190,11 +189,9 @@ function display_mail(id, mailbox) {
     }
 
     // Create new div for insert body
-    document.createElement("hr");
     let body = document.createElement("div");
     body.className = "m-2";
     body.innerHTML = `<textarea style="width:100%; height:auto; border-radius:10px; padding:20px" readonly="true">${email.body}</textarea>`;
-    console.log(body);
     emails_view.append(body);
   });
 }
