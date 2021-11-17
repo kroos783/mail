@@ -1,3 +1,45 @@
 textarea {
     min-height: 400px;
 }
+
+.email-list {
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.read {
+    background-color: rgb(218, 218, 218);
+}
+
+.unread {
+    background-color: white;
+}
+
+.timestamp {
+    text-align: end;
+}
+
+.sender {
+    text-align: start;
+}
+
+.subject {
+    text-align: start;
+
+}
+
+.icon {
+    display: flex;
+    justify-content: end;
+}
+
+.icon img {
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+}
