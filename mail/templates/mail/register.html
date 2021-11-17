@@ -1,7 +1,11 @@
 {% extends "mail/layout.html" %}
 
 {% block body %}
-
+<div class="formlog">
+    <img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/400/000000/external-email-cyber-security-kiranshastry-lineal-color-kiranshastry-2.png"/>
+    <h1>appMail</h1>
+</div>
+<div class="formlogreg">
     <h2>Register</h2>
 
     {% if message %}
@@ -23,5 +27,5 @@
     </form>
 
     Already have an account? <a href="{% url 'login' %}">Log In here.</a>
-
+</div>
 {% endblock %}

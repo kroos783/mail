@@ -64,7 +64,7 @@ function load_mailbox(mailbox) {
 }
 
 function submit_mail(event) {
-  // Change beheavor if needed
+  // Change behavor if needed
   event.preventDefault();
 
   // Create variables and save data form for send to db
